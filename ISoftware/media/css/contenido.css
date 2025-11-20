@@ -1,0 +1,127 @@
+/* ===========================================================
+   contenido.css
+   Estilos modernos para páginas internas (ej. desarrollo.html)
+   No modifica el diseño principal del index.
+   =========================================================== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo interno (solo dentro del iframe) */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f8f9fa;
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+/* Títulos principales */
+h2 {
+  font-size: 2em;
+  color: #aad8d3;
+  border-bottom: 2px solid #f6aa1c;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.6em;
+  color: #76c7c0;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 1.3em;
+  color: #e8f1f2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 1.1em;
+  color: #e3e3e3;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+/* Secciones con efecto suave */
+section {
+  width: 85%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.6s ease, opacity 0.8s ease;
+}
+
+/* Cuando se hacen visibles (por JS) */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Figuras e imágenes */
+figure {
+  text-align: center;
+  margin: 20px auto;
+}
+
+figure img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease;
+}
+
+figure img:hover {
+  transform: scale(1.03);
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #cfd8dc;
+  margin-top: 8px;
+}
+
+/* Línea divisoria */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #5bc0be, #f6aa1c);
+  margin: 50px auto;
+  width: 85%;
+  border-radius: 4px;
+}
+
+/* Enlaces */
+a {
+  color: #5bc0be;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #9be3de;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    padding: 20px;
+  }
+  h2 { font-size: 1.7em; }
+  h3 { font-size: 1.4em; }
+  h4 { font-size: 1.2em; }
+  h5 { font-size: 1em; }
+}

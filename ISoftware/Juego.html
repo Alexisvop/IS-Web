@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra el Concepto - Juego de Requisitos</title>
+    <script src="media/js/jq.js" type="text/javascript"></script>
+    <script src="media/js/m.js" type="text/javascript"></script>
+    <script src="media/js/ui.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="media/css/ui.css" type="text/css">
+    <link rel="stylesheet" href="media/css/juego.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Encuentra el Concepto</h1>
+            <p class="subtitle">Juego de adivinanza - Ingeniería de Requisitos</p>
+        </header>
+        
+        <div class="game-area">
+            <div class="game-info">
+                <div class="info-item">
+                    <div class="info-label">CONCEPTOS</div>
+                    <div class="info-value" id="concept-count">0/10</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">PUNTUACIÓN</div>
+                    <div class="info-value" id="score">0</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">AYUDAS</div>
+                    <div class="info-value" id="hints">5</div>
+                </div>
+            </div>
+            
+            <div class="game-instructions">
+                <div class="instructions-title">Instrucciones:</div>
+                <p>Adivina el concepto de Ingeniería de Requisitos seleccionando letras. Tienes 6 intentos por concepto. <br>¡Usa las pistas si necesitas ayuda!</p>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            
+            <div class="word-display" id="word-display"></div>
+            
+            <div class="hint-area">
+                <div class="hint-title">PISTA:</div>
+                <div id="hint-text">Selecciona un concepto para ver la pista</div>
+            </div>
+            
+            <div class="keyboard" id="keyboard">
+                <!-- Las letras se generarán con JavaScript -->
+            </div>
+            
+            <div class="controls">
+                <button id="hint-btn">Usar Pista</button>
+                <button id="new-game-btn">Nuevo Juego</button>
+            </div>
+            
+            <div class="game-result" id="game-result"></div>
+            
+            <div class="concept-explanation" id="concept-explanation">
+                <div class="concept-title" id="concept-name"></div>
+                <div id="concept-description"></div>
+            </div>
+        </div>
+    </div>
+    <script src="media/js/juego.js"></script>
+</body>
+</html>
