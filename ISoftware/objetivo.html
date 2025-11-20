@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es" style="">
+
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 5"><script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<script src="media/js/referencias.js"></script>
+    <link rel="stylesheet" href="media/css/referencias.css">
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/contenido.css">
+    <link rel="stylesheet" href="media/css/modulos.css">
+	<link rel="icon" href="media/img/icono.png">
+
+</head>
+<body style="">
+    <section>
+		<br><br><br>
+        <h1>Objetivos y planteamiento del problema.</h1>
+		<br>
+		
+        <div class="content">
+
+            <div class="content-block">
+                <p><strong>Objetivo de aprendizaje:</strong> El objetivo general de este tutorial es proporcionar a los estudiantes de la Facultad de Ingeniería de la UNAM un conocimiento integral y práctico sobre la Ingeniería de Requerimientos (IR), centrándose en las técnicas clave para la obtención de requisitos.
+                <span class="ref parafrasis">
+                    [6]
+                    <span class="ref-tooltip">
+                        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                        <em>Ingeniería de Requisitos.</em>
+                        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                        <br><br>
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+                <p>Este recurso busca establecer la disciplina de la IR como el mecanismo apropiado para entender lo que desea el cliente, analizar las necesidades, evaluar la factibilidad, negociar una solución razonable y especificarla sin ambigüedades, aspectos cruciales para el desarrollo exitoso de productos de software.
+                <span class="ref parafrasis">
+                    [11]
+                    <span class="ref-tooltip">
+                        <strong>Pressman, R. (2010).</strong>
+                        <em>Ingeniería del Software. Un enfoque práctico.</em>
+                        <br>McGraw Hill.
+                        <br><br>
+                        <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+                <p>Al completar el estudio de este material, los alumnos estarán capacitados para lograr los siguientes objetivos específicos:</p>
+            </div>
+            
+            <div class="content-block">
+                <h5>1. Comprender la Importancia Crítica y Fundamentos de los Requerimientos de Software</h5>
+                <ul>
+                    <li><strong>Entender la disciplina de IR:</strong> Se definirá la Ingeniería de Requerimientos (IR) como la aplicación de un enfoque sistemático, disciplinado y cuantificable al desarrollo de software. Es una actividad de intervención humana, en la que participan las partes interesadas mediante un proceso orientado a solicitar, comprender y modelar las necesidades del cliente. En definitiva, la IR es el conjunto de actividades para descubrir, documentar y mantener un conjunto de requisitos.
+                    <span class="ref parafrasis">
+                        [1]
+                        <span class="ref-tooltip">
+                            <strong>Serna, M. (2021).</strong>
+                            <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+                            <br>Editorial Universidad del Valle.
+                            <br><br>
+                            <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span> 
+                    <span class="ref parafrasis">
+                        [5]
+                        <span class="ref-tooltip">
+                            <strong>Wiegers, K. &amp; Beatty, J.(2013).</strong>
+                            <em>Software requirements (3ª ed.).</em>
+                            <br>Microsoft Press.
+                            <br><br>
+                            <a href="https://api.pageplace.de/preview/DT0400.9780735679641_A23707999/preview-9780735679641_A23707999.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span> 
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span> 
+                    <span class="ref parafrasis">
+                        [9]
+                        <span class="ref-tooltip">
+                            <strong>Pradel, J. &amp; Raya, J. (2013).</strong>
+                            <em>Introducción a la ingeniería del software.</em>
+                            <br>Universitat Oberta de Catalunya.
+                            <br><br>
+                            <a href="https://openaccess.uoc.edu/server/api/core/bitstreams/fab2269c-d5ae-4e93-934a-b0d91601d0f7/content" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Reconocer el impacto del fracaso:</strong> Se resaltará que la IR es la fase más crítica y compleja en el desarrollo de sistemas, y es la fase más propensa a errores. Un error en la etapa de requisitos puede ser de 10 hasta 100 veces más costoso que un error en el código. Si cuesta $1 localizar un error durante la IR, puede costar $10 durante la programación y hasta $200 después de la entrega del sistema.
+                    <span class="ref parafrasis">
+                        [12]
+                        <span class="ref-tooltip">
+                            <strong>Cristá, M. (2024).</strong>
+                            <em>Introducción a la Ingeniería de Requerimientos.</em>
+                            <br>Facultad de Ciencias Exactas, Ingeniería y Agrimensura.
+                            <br><br>
+                            <a href="https://www.fceia.unr.edu.ar/~mcristia/publicaciones/ingreq-a.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Diferenciar los tipos de requerimientos (RF y RNF):</strong>
+                        <ul>
+                            <li>Se distinguirán los Requerimientos Funcionales (RF), que son enunciados acerca de los servicios que el sistema debe proveer. Describen el comportamiento y los datos que el sistema administrará.
+                            <span class="ref parafrasis">
+                                [8]
+                                <span class="ref-tooltip">
+                                    <strong>Wong, S. (2017).</strong>
+                                    <em>Análisis y requerimientos de software: manual autoformativo interactivo.</em>
+                                    <br>Universidad Continental.
+                                    <br><br>
+                                    <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/4281/1/DO_FIN_103_MAI_UC0939_2018.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                    Ver fuente original
+                                    </a>
+                                </span>
+                            </span></li>
+                            <li>Los Requerimientos No Funcionales (RNF) son limitaciones o restricciones sobre los servicios o funciones que ofrece el sistema. Se relacionan con propiedades emergentes del sistema como fiabilidad, tiempo de respuesta y uso de almacenamiento.
+                            <span class="ref parafrasis">
+                                [10]
+                                <span class="ref-tooltip">
+                                    <strong>Sommerville, I. (2011).</strong>
+                                    <em>Ingeniería de Software.</em>
+                                    <br>PEARSON EDUCACIÓN.
+                                    <br><br>
+                                    <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                        Ver fuente original
+                                    </a>
+                                </span>
+                            </span></li>
+                            <li>Se abordará la discrepancia de consenso sobre el significado de los RNF, entendiendo que son considerados como requerimientos de calidad y restricciones. Se debe notar la importancia de los RNF ya que, si no se cumplen, harían que todo el sistema sea inútil.
+                            <span class="ref parafrasis">
+                                [10]
+                                <span class="ref-tooltip">
+                                    <strong>Sommerville, I. (2011).</strong>
+                                    <em>Ingeniería de Software.</em>
+                                    <br>PEARSON EDUCACIÓN.
+                                    <br><br>
+                                    <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                        Ver fuente original
+                                    </a>
+                                </span>
+                            </span></li>
+                            <li>Se enseñará que los RNF pueden clasificarse en: de producto (comportamiento), de organización (políticas existentes) y externos (legislación).
+                            <span class="ref parafrasis">
+                                [6]
+                                <span class="ref-tooltip">
+                                    <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                                    <em>Ingeniería de Requisitos.</em>
+                                    <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                                    <br><br>
+                                    <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                        Ver fuente original
+                                    </a>
+                                </span>
+                            </span>
+                            <span class="ref parafrasis">
+                                [10]
+                                <span class="ref-tooltip">
+                                    <strong>Sommerville, I. (2011).</strong>
+                                    <em>Ingeniería de Software.</em>
+                                    <br>PEARSON EDUCACIÓN.
+                                    <br><br>
+                                    <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                        Ver fuente original
+                                    </a>
+                                </span>
+                            </span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="content-block">
+                <h5>2. Administrar y Aplicar Eficazmente las Técnicas de Obtención (Elicitación)</h5>
+                <ul>
+                    <li><strong>Desarrollar un enfoque proactivo de obtención:</strong> Los estudiantes comprenderán que el término "ingeniería de requerimientos" es más adecuado que "relevamiento". Esto implica adoptar una actitud proactiva para identificar todos los problemas y obtener los requerimientos de manera exhaustiva y precisa, en lugar de esperar a que aparezcan fácilmente.
+                    <span class="ref parafrasis">
+                        [7]
+                        <span class="ref-tooltip">
+                            <strong>Briano,C. (2023).</strong>
+                            <em>Compilación de apuntes sobre conceptos fundamentales de la Ingeniería de Software: con una visión orientada a proyectos vinculados con las Ciencias Económicas.</em>
+                            <br>Ciudad Autónoma de Buenos Aires. Páginas: 2, 81.
+                            <br><br>
+                            <a href="http://bibliotecadigital.econ.uba.ar/download/libros/Briano_compilacion_apuntes.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Dominar el proceso y las técnicas de elicitación:</strong>
+                        <ul>
+                            <li>La elicitación, también llamada Descubrimiento de Requerimientos, es el proceso de interactuar con los participantes para descubrir sus requerimientos.
+                            <span class="ref parafrasis">
+                                [7]
+                                <span class="ref-tooltip">
+                                    <strong>Briano,C. (2023).</strong>
+                                    <em>Compilación de apuntes sobre conceptos fundamentales de la Ingeniería de Software: con una visión orientada a proyectos vinculados con las Ciencias Económicas.</em>
+                                    <br>Ciudad Autónoma de Buenos Aires. Páginas: 2, 81.
+                                    <br><br>
+                                    <a href="http://bibliotecadigital.econ.uba.ar/download/libros/Briano_compilacion_apuntes.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                    Ver fuente original
+                                    </a>
+                                </span>
+                            </span></li>
+                            <li>Se presentará el proceso iterativo de elicitación y se abordarán las técnicas más comunes: Entrevistas (conversaciones cara a cara), Cuestionarios o Encuestas (útiles para un gran número de stakeholders), Observación (para descubrir requerimientos no expresados), Análisis de Documentación Existente, Talleres de Requisitos (sesiones cortas e intensivas para consenso) y Prototipos de Exploración (versiones parciales del software para validar requisitos).
+                            <span class="ref parafrasis">
+                                [12]
+                                <span class="ref-tooltip">
+                                    <strong>Cristá, M. (2024).</strong>
+                                    <em>Introducción a la Ingeniería de Requerimientos.</em>
+                                    <br>Facultad de Ciencias Exactas, Ingeniería y Agrimensura.
+                                    <br><br>
+                                    <a href="https://www.fceia.unr.edu.ar/~mcristia/publicaciones/ingreq-a.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                        Ver fuente original
+                                    </a>
+                                </span>
+                            </span>
+                            <span class="ref parafrasis">
+                                [6]
+                                <span class="ref-tooltip">
+                                    <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                                    <em>Ingeniería de Requisitos.</em>
+                                    <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                                    <br><br>
+                                    <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                        Ver fuente original
+                                    </a>
+                                </span>
+                            </span></li>
+                        </ul>
+                    </li>
+                    <li><strong>Aplicación a Requerimientos No Funcionales (RNF):</strong> Se abordará la dificultad de elicitar RNF, ya que las metodologías de desarrollo Web carecen de técnicas específicas. Se introducirá el uso de Plantillas de Elicitación de RNF de Calidad y Restricciones como herramientas que brindan un conjunto de preguntas para adquirir conocimiento relevante del dominio del problema.
+                    <span class="ref parafrasis">
+                        [3]
+                        <span class="ref-tooltip">
+                            <strong>Rojo, S. del V. &amp; Oliveros, A. (2014).</strong>
+                            <em>Elicitación y Especificación de Requerimientos No Funcionales para aplicaciones Web.</em>
+                            <br>15th Argentine Symposium on Software Engineering, ASSE.
+                            <br><br>
+                            <a href="https://43jaiio.sadio.org.ar/proceedings/ASSE/02-08-941-2582-2-DR.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h5>3. Modelar y Gestionar Requerimientos para la Calidad del Software</h5>
+                <ul>
+                    <li><strong>Modelado y documentación:</strong> Se enseñará que el modelado de requerimientos tiene como objetivo describir los dominios de información, función y comportamiento que se requieren para un sistema. El producto final de esta fase es el Documento de Especificación de Requerimientos de Software (ERS), que es un comunicado oficial de lo que deben implementar los desarrolladores. Este documento es la base para el diseño, codificación y pruebas del sistema.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Validación y Verificación (V&V):</strong> Se diferenciará la Verificación (punto de vista del desarrollador, asegurando que el software satisfaga los requisitos especificados) de la Validación (punto de vista del cliente, asegurando que se cumplan sus necesidades). Se enfatizará que la validación se logra mediante Revisiones de requerimientos, Creación de prototipos y generación de casos de prueba.
+                    <span class="ref parafrasis">
+                        [10]
+                        <span class="ref-tooltip">
+                            <strong>Sommerville, I. (2011).</strong>
+                            <em>Ingeniería de Software.</em>
+                            <br>PEARSON EDUCACIÓN.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Gestión del cambio (Volatilidad y Trazabilidad):</strong> Se abordará que los requisitos tienen la característica de volatilidad, lo que dificulta su seguimiento. Por lo tanto, se requiere la Gestión de Requerimientos, que es el conjunto de actividades que ayudan a identificar, controlar y dar seguimiento a los requerimientos y a sus cambios. Esto incluye la Trazabilidad, que documenta la vida de cada requisito y permite vincular su origen con los elementos de diseño y código fuente para apoyar el análisis del impacto de los cambios.
+                    <span class="ref parafrasis">
+                        [1]
+                        <span class="ref-tooltip">
+                            <strong>Serna, M. (2021).</strong>
+                            <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+                            <br>Editorial Universidad del Valle.
+                            <br><br>
+                            <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span>
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+            
+            <div class="content-block">
+                <h5>Planteamiento del problema</h5>
+                <p>El desarrollo de software aún enfrenta una alta tasa de fracasos y presenta falencias en calidad, eficiencia y seguridad. La principal causa de estos problemas radica en la mala o insuficiente comprensión de los requerimientos.
+                <span class="ref parafrasis">
+                    [1]
+                    <span class="ref-tooltip">
+                        <strong>Serna, M. (2021).</strong>
+                        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+                        <br>Editorial Universidad del Valle.
+                        <br><br>
+                        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                        Ver fuente original
+                        </a>
+                    </span>
+                </span> 
+                <span class="ref parafrasis">
+                    [11]
+                    <span class="ref-tooltip">
+                        <strong>Pressman, R. (2010).</strong>
+                        <em>Ingeniería del Software. Un enfoque práctico.</em>
+                        <br>McGraw Hill.
+                        <br><br>
+                        <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+                <p>La Ingeniería de Requerimientos (IR) es considerada la fase más crítica y compleja del proceso de software, y un fallo en esta etapa afecta el resto del ciclo de vida.
+                <span class="ref parafrasis">
+                    [1"]
+                    <span class="ref-tooltip">
+                        <strong>Serna, M. (2021).</strong>
+                        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+                        <br>Editorial Universidad del Valle.
+                        <br><br>
+                        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                        Ver fuente original
+                        </a>
+                    </span>
+                </span> 
+                <span class="ref parafrasis">
+                    [6]
+                    <span class="ref-tooltip">
+                        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                        <em>Ingeniería de Requisitos.</em>
+                        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                        <br><br>
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+            </div>
+            
+            <div class="content-block">
+                <h5>1. Consecuencias y Riesgos de una Deficiente Elicitación</h5>
+                <p>La falta de una IR sistemática y proactiva conlleva riesgos significativos:</p>
+                <ul>
+                    <li><strong>Alto Costo de Corrección:</strong> Los errores cometidos en la etapa inicial de requisitos son los más costosos de corregir en fases posteriores. Se ha calculado que si cuesta $1 subsanar
+                    un error durante la IR, puede costar $10 durante la programación y hasta $200 después de la entrega del sistema.
+                    <span class="ref parafrasis">
+                        [12]
+                        <span class="ref-tooltip">
+                            <strong>Cristá, M. (2024).</strong>
+                            <em>Introducción a la Ingeniería de Requerimientos.</em>
+                            <br>Facultad de Ciencias Exactas, Ingeniería y Agrimensura.
+                            <br><br>
+                            <a href="https://www.fceia.unr.edu.ar/~mcristia/publicaciones/ingreq-a.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Volatilidad y Ambigüedad:</strong> Los requerimientos son a menudo ambiguos, contradictorios o incompletos. Además, tienen la característica de volatilidad, lo que dificulta su seguimiento y genera la necesidad de una Gestión del Cambio constante.
+                    <span class="ref parafrasis">
+                        [1]
+                        <span class="ref-tooltip">
+                            <strong>Serna, M. (2021).</strong>
+                            <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+                            <br>Editorial Universidad del Valle.
+                            <br><br>
+                            <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Responsabilidad del Profesional:</strong> Aunque los usuarios tienen conocimiento de su trabajo, no siempre están capacitados para elaborar especificaciones detalladas. La responsabilidad principal recae, por lo tanto, en el ingeniero de software para aplicar buenas prácticas y construir requisitos claros y precisos.
+                    <span class="ref parafrasis">
+                        [7]
+                        <span class="ref-tooltip">
+                            <strong>Briano,C. (2023).</strong>
+                            <em>Compilación de apuntes sobre conceptos fundamentales de la Ingeniería de Software: con una visión orientada a proyectos vinculados con las Ciencias Económicas.</em>
+                            <br>Ciudad Autónoma de Buenos Aires. Páginas: 2, 81.
+                            <br><br>
+                            <a href="http://bibliotecadigital.econ.uba.ar/download/libros/Briano_compilacion_apuntes.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+            
+            <div class="content-block">
+                <h5>2. El Desafío de la Elicitación y las Técnicas</h5>
+                <p>La obtención de requerimientos es un desafío complejo. Los requerimientos no siempre son fáciles de obtener, pues los usuarios pueden no tener claras sus necesidades, no saber expresarlas correctamente, u omitir información que consideran "obvia".</p>
+                <p>El reto es mayor con los Requerimientos No Funcionales (RNF), que definen la calidad y las restricciones del sistema. La comunidad de IR no tiene consenso sobre su definición o clasificación, y la obtención tardía de RNF puede llevar a grandes, complejos y costosos cambios, haciendo que todo el sistema sea inútil si no se cumplen.
+                <span class="ref parafrasis">
+                    [10]
+                    <span class="ref-tooltip">
+                        <strong>Sommerville, I. (2011).</strong>
+                        <em>Ingeniería de Software.</em>
+                        <br>PEARSON EDUCACIÓN.
+                        <br><br>
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+            </div>
+            
+            <div class="content-block" style="text-align: center;">
+				<figure>
+					<img src="media/img/objetivos.jpg" alt="Descripción de la imagen" style="max-width: 100%; height: auto; border-radius: 10px; margin: 0 auto; display: block;">
+					<figcaption style="font-size: 14px; color: #ccc; margin-top: 10px;">Imagen obtenida de Internet; derechos de autor pueden aplicarse.</figcaption>
+				</figure>
+				<p style="font-size: 14px; color: #ccc; text-align: center;">IMAGEN 1. Persona cumpliendo los objetivos.</p>
+			</div>
+			
+        </div> </section>
+
+	<script>
+    const sections = document.querySelectorAll("section");
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.05 });  
+
+    sections.forEach(section => observer.observe(section));
+    
+    setTimeout(() => {
+        sections.forEach(section => {
+            if (!section.classList.contains('visible')) {
+                section.classList.add('visible');
+            }
+        });
+    }, 100);  
+</script>
+
+</body>
+</html>

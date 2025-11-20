@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es" style="">
+
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 5"><script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<script src="media/js/referencias.js"></script>
+    <link rel="stylesheet" href="media/css/referencias.css">
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/contenido.css">
+    <link rel="stylesheet" href="media/css/modulos.css">
+	<link rel="icon" href="media/img/icono.png">
+
+</head>
+<body style="">
+    <section>
+		<br><br><br>
+        <h1>Módulo 4: Casos Prácticos y Ejemplos Aplicados.</h1>
+		<br>
+		
+        <div class="content">
+
+            <div class="content-block">
+                <p>El estudio de casos prácticos y ejemplos es esencial para la Ingeniería de Requerimientos (IR), ya que permite al estudiante pasar de la teoría a la aplicación real de las técnicas de obtención, análisis y modelado. Al analizar escenarios específicos, se puede determinar qué requerimientos (funcionales y no funcionales) son prioritarios y qué modelos de análisis son más adecuados para la solución.
+                <span class="ref parafrasis">
+                    [7]
+                    <span class="ref-tooltip">
+                        <strong>Briano,C. (2023).</strong>
+                        <em>Compilación de apuntes sobre conceptos fundamentales de la Ingeniería de Software: con una visión orientada a proyectos vinculados con las Ciencias Económicas.</em>
+                        <br>Ciudad Autónoma de Buenos Aires. Páginas: 2, 81.
+                        <br><br>
+                        <a href="http://bibliotecadigital.econ.uba.ar/download/libros/Briano_compilacion_apuntes.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                        Ver fuente original
+                        </a>
+                    </span>
+                </span> 
+                <span class="ref parafrasis">
+                    [6]
+                    <span class="ref-tooltip">
+                        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                        <em>Ingeniería de Requisitos.</em>
+                        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                        <br><br>
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+                <p>A continuación, se analizan los desafíos y requerimientos esenciales que se esperarían en diferentes tipos de sistemas:</p>
+            </div>
+
+            <div class="content-block">
+                <h5>5.1. Sistema de Gestión de Biblioteca Universitaria</h5>
+                <p>Los sistemas de gestión son un tipo de aplicación que requiere un diseño bastante detallado antes de comenzar el desarrollo, debido a la posible vinculación con normativas o reglas complejas. La IR en estos proyectos se enfoca en establecer los elementos necesarios para planificar las actividades y garantizar que el sistema dé un verdadero soporte y agregue valor al proceso de la organización.
+                <span class="ref parafrasis">
+                    [7]
+                    <span class="ref-tooltip">
+                        <strong>Briano,C. (2023).</strong>
+                        <em>Compilación de apuntes sobre conceptos fundamentales de la Ingeniería de Software: con una visión orientada a proyectos vinculados con las Ciencias Económicas.</em>
+                        <br>Ciudad Autónoma de Buenos Aires. Páginas: 2, 81.
+                        <br><br>
+                        <a href="http://bibliotecadigital.econ.uba.ar/download/libros/Briano_compilacion_apuntes.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                        Ver fuente original
+                        </a>
+                    </span>
+                </span> 
+                <span class="ref parafrasis">
+                    [6]
+                    <span class="ref-tooltip">
+                        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                        <em>Ingeniería de Requisitos.</em>
+                        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                        <br><br>
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+                <p>En un Sistema de Gestión de Biblioteca, se aplicarían los siguientes conceptos:</p>
+                <ul>
+                    <li><strong>Modelado Orientado al Flujo y Comportamiento:</strong> Se utilizaría el Diagrama de Flujo de Datos (DFD) para ilustrar cómo se transforma la entrada (ej. solicitud de préstamo) en una salida (ej. libro entregado y registro actualizado). El DFD muestra los elementos funcionales del sistema y cómo transforman los datos que fluyen a través de él.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Modelado Orientado a Clases:</strong> Se definen las clases de análisis del dominio, como Libro, Usuario o Préstamo, que serán manipuladas por el sistema. La salida de la fase de diseño define las estructuras de datos y las arquitecturas.
+                    <span class="ref parafrasis">
+                        [7]
+                        <span class="ref-tooltip">
+                            <strong>Briano,C. (2023).</strong>
+                            <em>Compilación de apuntes sobre conceptos fundamentales de la Ingeniería de Software: con una visión orientada a proyectos vinculados con las Ciencias Económicas.</em>
+                            <br>Ciudad Autónoma de Buenos Aires. Páginas: 2, 81.
+                            <br><br>
+                            <a href="http://bibliotecadigital.econ.uba.ar/download/libros/Briano_compilacion_apuntes.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Requerimientos de la Organización (RNF):</strong> Un ejemplo de RNF organizacional es aquel que deriva de las políticas y procedimientos existentes en la organización. En este caso, podrían ser las reglas específicas de la universidad sobre el tiempo máximo de préstamo o el número de libros que un estudiante puede tener. Por ejemplo, el requerimiento de que el sistema funcione de acuerdo con un horario laboral específico (18:00 a 19:00 horas) se clasificaría como un Requerimiento de la Organización.
+                    <span class="ref parafrasis">
+                        [8]
+                        <span class="ref-tooltip">
+                            <strong>Wong, S. (2017).</strong>
+                            <em>Análisis y requerimientos de software: manual autoformativo interactivo.</em>
+                            <br>Universidad Continental.
+                            <br><br>
+                            <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/4281/1/DO_FIN_103_MAI_UC0939_2018.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h5>5.2. Aplicación Móvil de Delivery de Comida (WebApps)</h5>
+                <p>El desarrollo de aplicaciones Web (Webapps) y móviles presenta desafíos específicos, ya que el enfoque se desplaza fuertemente hacia la experiencia del usuario y los Requerimientos No Funcionales (RNF). La complejidad de los requerimientos para aplicaciones Web demanda herramientas y técnicas acordes a su naturaleza.</p>
+                <ul>
+                    <li><strong>Prioridad de RNF (Atributos de Calidad):</strong> Los RNF se relacionan con propiedades emergentes, y el fracaso en cumplir con un RNF importante podría hacer que todo el sistema sea inútil.
+                    <span class="ref parafrasis">
+                        [10]
+                        <span class="ref-tooltip">
+                            <strong>Sommerville, I. (2011).</strong>
+                            <em>Ingeniería de Software.</em>
+                            <br>PEARSON EDUCACIÓN.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span> 
+                    <span class="ref parafrasis">
+                        [3]
+                        <span class="ref-tooltip">
+                            <strong>Rojo, S. del V. &amp; Oliveros, A. (2014).</strong>
+                            <em>Elicitación y Especificación de Requerimientos No Funcionales para aplicaciones Web.</em>
+                            <br>15th Argentine Symposium on Software Engineering, ASSE.
+                            <br><br>
+                            <a href="https://43jaiio.sadio.org.ar/proceedings/ASSE/02-08-941-2582-2-DR.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Ejemplos de RNF de Calidad y Restricción para WebApps:</strong> El caso de una aplicación de delivery ilustra la importancia de los RNF en este dominio:
+                        <ul class="requirements-list">
+                            <li><strong>Rendimiento:</strong> La aplicación (app) debe cargar el menú en menos de 2 segundos. Esta métrica debe ser verificable, ya que la Rapidez se mide en Transacciones por segundo procesadas o Tiempo de respuesta usuario/evento.
+                            <span class="ref parafrasis">
+                                [10]
+                                <span class="ref-tooltip">
+                                    <strong>Sommerville, I. (2011).</strong>
+                                    <em>Ingeniería de Software.</em>
+                                    <br>PEARSON EDUCACIÓN.
+                                    <br><br>
+                                    <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                        Ver fuente original
+                                    </a>
+                                </span>
+                            </span></li>
+                            <li><strong>Seguridad:</strong> Los datos de pago deben transmitirse usando TLS 1.3.</li>
+                            <li><strong>Usabilidad:</strong> Un usuario nuevo debe poder hacer un pedido en menos de 5 minutos. La Facilidad de uso se puede medir por el Tiempo de capacitación.
+                            <span class="ref parafrasis">
+                                [10]
+                                <span class="ref-tooltip">
+                                    <strong>Sommerville, I. (2011).</strong>
+                                    <em>Ingeniería de Software.</em>
+                                    <br>PEARSON EDUCACIÓN.
+                                    <br><br>
+                                    <a href="httpsicon" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="tooltip-link"
+                                    onclick="event.stopPropagation()">
+                                        Ver fuente original
+                                    </a>
+                                </span>
+                            </span></li>
+                            <li><strong>Portabilidad:</strong> La app debe funcionar en Android (versión 10+) e iOS (versión 14+).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Técnicas de Validación:</strong> Para asegurar la calidad de la interfaz y la funcionalidad, se usa el prototipado interactivo (ej. usando herramientas como Marvel App para simular el flujo de pedido). Un prototipo ayuda a validar los requisitos y a que los usuarios obtengan nuevas ideas para requerimientos.
+                    <span class="ref parafrasis">
+                        [10]
+                        <span class="ref-tooltip">
+                            <strong>Sommerville, I. (2011).</strong>
+                            <em>Ingeniería de Software.</em>
+                            <br>PEARSON EDUCACIÓN.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h5>5.3. Sistema de Gestión de Incidencias para Soporte Técnico (Ejemplo de Especificación Formal)</h5>
+                <p>El éxito en la IR culmina en la Especificación de Requerimientos, un proceso de elaboración, refinamiento y organización de los requisitos en un documento formal. Utilizaremos el ejemplo de un sistema de gestión de trámites (similar a la gestión de incidencias) para ilustrar la formalidad requerida.
+                <span class="ref parafrasis">
+                    [6]
+                    <span class="ref-tooltip">
+                        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                        <em>Ingeniería de Requisitos.</em>
+                        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                        <br><br>
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+                <ul>
+                    <li><strong>El Documento de Especificación (ERS):</strong> El producto final del proceso de requisitos es un Documento de Especificación de Requerimientos de Software (ERS). Este documento es un comunicado oficial de lo que deben implementar los desarrolladores.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span> 
+                    <span class="ref parafrasis">
+                        [10]
+                        <span class="ref-tooltip">
+                            <strong>Sommerville, I. (2011).</strong>
+                            <em>Ingeniería de Software.</em>
+                            <br>PEARSON EDUCACIÓN.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Estructura Formal:</strong> Las plantillas para la especificación se diseñan siguiendo estándares como el IEEE 830-1998. El ERS debe ser la base para la planificación del proyecto, el diseño, la codificación, las pruebas y la documentación de usuario.
+                    <span class="ref parafrasis">
+                        [10]
+                        <span class="ref-tooltip">
+                            <strong>Sommerville, I. (2011).</strong>
+                            <em>Ingeniería de Software.</em>
+                            <br>PEARSON EDUCACIÓN.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Especificación de los Requerimientos Funcionales:</strong> Se recomienda escribir frases cortas y concisas usando imperativos para describir los RF. La estructura debe incluir la restricción, el asunto (quién o qué realiza la tarea), la acción del verbo y el resultado observable.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Integración de la Trazabilidad:</strong> Los requerimientos funcionales deben tener referencias a los atributos de calidad (RNF) relacionados. La trazabilidad es la documentación de la vida de cada requisito, lo que permite el seguimiento a su origen (necesidades) y hacia adelante (diseño, código y pruebas). La trazabilidad se utiliza para validar el diseño de la arquitectura y la consideración de los requisitos funcionales y no funcionales.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span> 
+                    <span class="ref parafrasis">
+                        [8]
+                        <span class="ref-tooltip">
+                            <strong>Wong, S. (2017).</strong>
+                            <em>Análisis y requerimientos de software: manual autoformativo interactivo.</em>
+                            <br>Universidad Continental.
+                            <br><br>
+                            <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/4281/1/DO_FIN_103_MAI_UC0939_2018.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Plantillas para RNF:</strong> La especificación de RNF Web se apoya en plantillas diseñadas a partir de bases conceptuales. Además de los RNF de Calidad, se utilizan plantillas para las restricciones.
+                    <span class="ref parafrasis">
+                        [3]
+                        <span class="ref-tooltip">
+                            <strong>Rojo, S. del V. &amp; Oliveros, A. (2014).</strong>
+                            <em>Elicitación y Especificación de Requerimientos No Funcionales para aplicaciones Web.</em>
+                            <br>15th Argentine Symposium on Software Engineering, ASSE.
+                            <br><br>
+                            <a href="https://43jaiio.sadio.org.ar/proceedings/ASSE/02-08-941-2582-2-DR.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Prototipo y Validación:</strong> La elaboración de prototipos es una técnica clave de validación de requisitos que involucra el diseño de pantallas en una herramienta gráfica o el maquetado. La creación de prototipos ayuda a probar las opciones de diseño y a entender mejor el problema y su solución.
+                    <span class="ref parafrasis">
+                        [8]
+                        <span class="ref-tooltip">
+                            <strong>Wong, S. (2017).</strong>
+                            <em>Análisis y requerimientos de software: manual autoformativo interactivo.</em>
+                            <br>Universidad Continental.
+                            <br><br>
+                            <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/4281/1/DO_FIN_103_MAI_UC0939_2018.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+
+        </div> </section>
+
+	<script src="media/js/modulos.js"></script>
+
+</body>
+</html>

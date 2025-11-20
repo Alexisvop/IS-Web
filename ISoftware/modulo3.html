@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es" style="">
+
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 5"><script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<script src="media/js/referencias.js"></script>
+    <link rel="stylesheet" href="media/css/referencias.css">
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/contenido.css">
+    <link rel="stylesheet" href="media/css/modulos.css">
+	<link rel="icon" href="media/img/icono.png">
+
+</head>
+<body style="">
+    <section>
+		<br><br><br>
+        <h1>Módulo 3: Análisis y Modelado de Requerimientos.</h1>
+		<br>
+		
+        <div class="content">
+
+            <div class="content-block">
+                <p>El Análisis de Requerimientos es la fase posterior a la Elicitación y es fundamental para construir sobre los requerimientos básicos que se establecieron durante la concepción, la indagación y la negociación. Su principal meta es refinar los requisitos, asegurando que todos los stakeholders (interesados) los comprendan y examinen las posibles deficiencias, como errores u omisiones.
+                <span class="ref parafrasis">
+                    [6]
+                    <span class="ref-tooltip">
+                        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                        <em>Ingeniería de Requisitos.</em>
+                        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                        <br><br>
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span> 
+                <span class="ref parafrasis">
+                    [11]
+                    <span class="ref-tooltip">
+                        <strong>Pressman, R. (2010).</strong>
+                        <em>Ingeniería del Software. Un enfoque práctico.</em>
+                        <br>McGraw Hill.
+                        <br><br>
+                        <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+            </div>
+
+            <div class="content-block">
+                <h5>4.1 Propósito del Análisis y el Rol del Modelo</h5>
+                <p>El Análisis incluye la descomposición detallada de los requisitos de alto nivel, la evaluación de la viabilidad y la negociación de prioridades. El objetivo final es desarrollar requisitos con suficiente calidad y detalle para que el personal técnico pueda proceder con el diseño, la construcción y las pruebas de manera realista.
+                <span class="ref parafrasis">
+                    [11]
+                    <span class="ref-tooltip">
+                        <strong>Pressman, R. (2010).</strong>
+                        <em>Ingeniería del Software. Un enfoque práctico.</em>
+                        <br>McGraw Hill.
+                        <br><br>
+                        <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span> 
+                <span class="ref parafrasis">
+                    [6]
+                    <span class="ref-tooltip">
+                        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                        <em>Ingeniería de Requisitos.</em>
+                        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                        <br><br>
+                        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+                
+                <ol>
+                    <li><strong>El Modelo como Puente:</strong> El modelo de análisis sirve como un puente entre la descripción general del sistema (que se centra en el negocio) y el diseño de software.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Objetivos Clave:</strong> El modelo de requerimientos debe lograr tres objetivos principales: describir lo que requiere el cliente, establecer la base para la creación de un diseño de software y definir un conjunto de requerimientos que puedan validarse una vez construido el software.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Abstracción Necesaria:</strong> En esta fase, el nivel de abstracción debe ser elevado, centrándose en los requerimientos que son visibles dentro del dominio del problema o negocio. Se deben retrasar las consideraciones de la infraestructura o los modelos no funcionales hasta la etapa de diseño.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ol>
+            </div>
+
+            <div class="content-block">
+                <h5>4.2 El Proceso del Ciclo de Análisis</h5>
+                <p>La Ingeniería de Requerimientos se desarrolla mediante una elaboración progresiva o incremental. El análisis se integra continuamente con la elicitación y la especificación.</p>
+
+                <h6>Las actividades clave del ciclo de análisis y modelado de requerimientos son:</h6>
+                <ol>
+                    <li><strong>Modelado del Negocio:</strong> Determinar si los modelos de negocios son necesarios y, en caso afirmativo, crearlos y verificar su exactitud a medida que evolucionan.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Definir el Alcance del Proyecto:</strong> Se delimita el alcance del sistema. Es crucial crear modelos que describan el alcance y revisar que no haya defectos o inconsistencias entre los requerimientos.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Crear Modelos Detallados:</strong> Desarrollar los modelos de requerimientos del usuario al detalle, incluyendo elementos basados en escenarios, clases, flujo y comportamiento.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Negociar Prioridades:</strong> Analizar y priorizar los requerimientos con los stakeholders para tomar decisiones sobre su importancia.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ol>
+            </div>
+
+            <div class="content-block">
+                <h5>4.3 El Modelado de Requerimientos: Tipos y Enfoques</h5>
+                <p>El resultado del análisis se plasma en los modelos de requerimientos, que son las necesidades de los usuarios representadas por diagramas, texto estructurado o una combinación de ambos. Dado que cualquier "vista" de los requerimientos es insuficiente para comprender un sistema complejo, se utiliza una combinación de representaciones.
+                <span class="ref parafrasis">
+                    [11]
+                    <span class="ref-tooltip">
+                        <strong>Pressman, R. (2010).</strong>
+                        <em>Ingeniería del Software. Un enfoque práctico.</em>
+                        <br>McGraw Hill.
+                        <br><br>
+                        <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="tooltip-link"
+                        onclick="event.stopPropagation()">
+                            Ver fuente original
+                        </a>
+                    </span>
+                </span></p>
+                <p><strong>Los principales tipos de modelos que se crean en esta fase son los siguientes.</strong></p>
+            </div>
+
+            <div class="content-block">
+                <h5>4.3.1 Modelos Basados en Escenarios</h5>
+                <p>Estos modelos ilustran cómo el usuario interactúa con el sistema.</p>
+                <ul>
+                    <li><strong>Casos de Uso:</strong> Describen un escenario específico desde el punto de vista de un actor definido. Los casos de uso son una técnica útil para el descubrimiento de requerimientos. Describen la secuencia específica de actividades que ocurren cuando se utiliza el software y deben ser lo suficientemente detallados para servir de base para el diseño.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span>
+                    <span class="ref parafrasis">
+                        [9]
+                        <span class="ref-tooltip">
+                            <strong>Pradel, J. &amp; Raya, J. (2013).</strong>
+                            <em>Introducción a la ingeniería del software.</em>
+                            <br>Universitat Oberta de Catalunya.
+                            <br><br>
+                            <a href="https://openaccess.uoc.edu/server/api/core/bitstreams/fab2269c-d5ae-4e93-934a-b0d91601d0f7/content" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                            Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Historias de Usuario:</strong> Al igual que los casos de uso, se utilizan para expresar requerimientos como escenarios.
+                    <span class="ref parafrasis">
+                        [10]
+                        <span class="ref-tooltip">
+                            <strong>Sommerville, I. (2011).</strong>
+                            <em>Ingeniería de Software.</em>
+                            <br>PEARSON EDUCACIÓN.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h5>4.3.2 Modelos de Información y Clases</h5>
+                <p>Estos modelos se centran en el dominio de la información y los objetos de datos que el sistema debe manipular.</p>
+                <ul>
+                    <li><strong>Modelo de Datos / Modelo Entidad-Relación (MER):</strong> Se crea si los requerimientos implican la necesidad de hacer interfaz o manipular una base de datos. El MER describe las necesidades de información del proceso de negocio, detallando entidades, atributos (características de la entidad) y relaciones entre ellas. El modelo de datos es un elemento crucial del modelo de análisis.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Modelos Orientados a Clases:</strong> Representan las clases orientadas a objetos, sus atributos, sus operaciones y la manera en que estas clases colaboran para cumplir con los requerimientos.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h5>4.3.3 Modelos Orientados al Flujo y Comportamiento</h5>
+                <p>Estos modelos describen la dinámica del sistema en respuesta a eventos y cómo se transforma la información.</p>
+                <ul>
+                    <li><strong>Modelos Orientados al Flujo:</strong> Representan los elementos funcionales del sistema y la forma en que transforman los datos a medida que estos fluyen a través del sistema. Esta técnica utiliza el Diagrama de Flujo de Datos (DFD) para ilustrar cómo se transforma la entrada en salida.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Modelos de Comportamiento:</strong> Ilustran la manera en que el software se comporta como consecuencia de eventos externos. El modelo de comportamiento ilustra los estados del sistema y el efecto que los eventos tienen sobre dichos estados.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h5>4.4 Negociación y Priorización de Requerimientos</h5>
+                <p>La negociación es una tarea fundamental que ocurre en paralelo con el análisis y la elaboración.</p>
+                <ul>
+                    <li><strong>Necesidad de Negociación:</strong> La IR es un proceso complejo porque los requisitos son a menudo confusos, no verificables ni validables. La negociación busca resolver conflictos y ambigüedades. La meta de esta etapa es definir una solución razonable.
+                    <span class="ref parafrasis">
+                        [11]
+                        <span class="ref-tooltip">
+                            <strong>Pressman, R. (2010).</strong>
+                            <em>Ingeniería del Software. Un enfoque práctico.</em>
+                            <br>McGraw Hill.
+                            <br><br>
+                            <a href="https://www.javier8a.com/umb/analisis/Libro_Pressman_7.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Priorización:</strong> No todos los requisitos son igual de importantes, y rara vez hay suficiente tiempo y dinero para desarrollar todos. La priorización de requerimientos es el proceso de asignar un precedente que ordene o clasifique un requerimiento sobre otro.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                    <li><strong>Toma de Decisiones:</strong> Los stakeholders necesitan la priorización para tomar decisiones inteligentes y defendibles sobre cuáles requisitos implementar o aplazar. La priorización se puede realizar utilizando criterios como el valor de negocio y la importancia para el cliente.
+                    <span class="ref parafrasis">
+                        [6]
+                        <span class="ref-tooltip">
+                            <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+                            <em>Ingeniería de Requisitos.</em>
+                            <br>Universidad Técnica Particular de Loja Págs. 53-54.
+                            <br><br>
+                            <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="tooltip-link"
+                            onclick="event.stopPropagation()">
+                                Ver fuente original
+                            </a>
+                        </span>
+                    </span></li>
+                </ul>
+                <p>Una vez que los requerimientos han sido analizados, modelados y negociados, están listos para pasar a la siguiente fase: la Especificación (documentación formal).</p>
+            </div>
+
+        </div> </section>
+
+	<script src="media/js/modulos.js"></script>
+
+</body>
+</html>
