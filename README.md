@@ -1,1 +1,1 @@
-Despues de unos incidentes provocados en el anterior repositorio, se creo este nuevo para mayor visibilidad y orden
+Proyecto de IS, qué se conforma de un sitio web acerca de los requerimientos de software
