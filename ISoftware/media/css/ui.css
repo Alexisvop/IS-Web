@@ -83,7 +83,8 @@ a:hover span {
 h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
   padding-bottom: 15px;
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
   margin: 0 auto;
 }
 h1 b,
@@ -440,7 +441,8 @@ SECTION
 */
 section {
   display: block;
-  width: 945px;
+  width: 90%;
+  max-width: 945px;
   height: auto;
   margin: 10px auto;
   padding-bottom: 20px;
