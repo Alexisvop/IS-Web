@@ -483,4 +483,61 @@ FONT-FACE
   src: url('fonts/myrrd41dd41d.html?#iefix') format('embedded-opentype'), url('fonts/myrr.woff') format('woff'), url('fonts/myrr-2.html') format('truetype'), url('fonts/myrr-3.html#Name') format('svg');
   font-weight: normal;
   font-style: normal;
+
+}
+/* ==================================================
+   FIX RESPONSIVE – NO MODIFICA EL CSS ORIGINAL
+================================================== */
+
+/* Altura real del viewport */
+#nav-left,
+#nav-right {
+    height: 100vh;
+}
+
+/* Scroll interno controlado */
+#nav-left ul,
+#nav-right ul {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Evita que el contenido se salga */
+#nav-left ul#index,
+#nav-right ul#files {
+    padding-bottom: 120px;
+}
+
+/* Títulos siempre visibles */
+#nav-left ul h2,
+#nav-right ul h2 {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 5;
+}
+
+/* Quita el bloqueo en pantallas pequeñas */
+@media (max-width: 1024px) {
+    div#theme {
+        min-width: 0;
+    }
+}
+
+/* Ajustes móviles */
+@media (max-width: 768px) {
+
+    #nav-left,
+    #nav-right {
+        width: 80%;
+    }
+
+    #nav-left {
+        left: -80%;
+    }
+
+    #nav-right {
+        right: -80%;
+    }
+
 }
