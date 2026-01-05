@@ -486,58 +486,31 @@ FONT-FACE
 
 }
 /* ==================================================
-   FIX RESPONSIVE – NO MODIFICA EL CSS ORIGINAL
+   FIX REAL PARA SCROLL – CAUSA ABSOLUTE
 ================================================== */
 
-/* Altura real del viewport */
-#nav-left,
-#nav-right {
-    height: 100vh;
-}
+/* SOLO para pantallas pequeñas */
+@media (max-height: 700px), (max-width: 768px) {
 
-/* Scroll interno controlado */
-#nav-left ul,
-#nav-right ul {
-    max-height: 100vh;
-    overflow-y: auto;
-}
-
-/* Evita que el contenido se salga */
-#nav-left ul#index,
-#nav-right ul#files {
-    padding-bottom: 120px;
-}
-
-/* Títulos siempre visibles */
-#nav-left ul h2,
-#nav-right ul h2 {
-    position: sticky;
-    top: 0;
-    background-color: rgba(0,0,0,0.85);
-    z-index: 5;
-}
-
-/* Quita el bloqueo en pantallas pequeñas */
-@media (max-width: 1024px) {
-    div#theme {
-        min-width: 0;
-    }
-}
-
-/* Ajustes móviles */
-@media (max-width: 768px) {
-
+    /* El scroll debe vivir en el NAV */
     #nav-left,
     #nav-right {
-        width: 80%;
+        overflow-y: auto;
+        height: 100vh;
     }
 
-    #nav-left {
-        left: -80%;
+    /* Desactivar absolute SOLO en responsive */
+    #nav-left ul#index,
+    #nav-left ul#themes,
+    #nav-right ul#files,
+    #nav-right ul#contact {
+        position: static !important;
     }
 
-    #nav-right {
-        right: -80%;
+    /* Separación visual */
+    #nav-left ul,
+    #nav-right ul {
+        padding-bottom: 40px;
     }
-
 }
+
